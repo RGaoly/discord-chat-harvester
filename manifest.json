@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Discord Chat Harvester",
+  "version": "1.0.0",
+  "description": "收集 Discord 聊天频道中的用户反馈",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "downloads",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://discord.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
